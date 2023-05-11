@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,9 +17,8 @@
         <h1 class="bg-dark text-light text-center py-2">PHP Advance Crud</h1>
 
         <div class="container">
-                <?php 
-                include 'form.php';
-                ?>
+                <?php include 'form.php'?>
+                <?php include 'profile.php'?>
                 <div class="row">
                         <div class="col-10">
                                 <div class="input-group">
@@ -37,30 +34,10 @@
                                 <button class="btn btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#usermodal">Add new user</button>
                         </div>
 
-                        <table class="table mt-5" id="usertable">
-                                <thead class="table-dark">
-                                        <tr>
-                                                <th scope="col">Image</th>
-                                                <th scope="col">Name</th>
-                                                <th scope="col">Email</th>
-                                                <th scope="col">Phone</th>
-                                                <th scope="col">Operations</th>
-                                        </tr>
-                                </thead>
-                                <tbody>
-                                        <tr>
-                                                <th scope="row">Picture1</th>
-                                                <td>Demo</td>
-                                                <td>Demo@gmail.com</td>
-                                                <td>0123</td>
-                                                <td>
-                                                        <span>Edit</span>
-                                                        <span>Profile</span>
-                                                        <span>Delete</span>
-                                                </td>
-                                        </tr>
-                                </tbody>
-                        </table>
+                        <?php
+                        include 'tabledata.php';
+                        ?>
+
                         <!-- pagination -->
                         <nav aria-label="Page navigation example" id="pagination">
                                 <ul class="pagination justify-content-center">
